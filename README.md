@@ -1,6 +1,6 @@
 # py_stack
 
-Stack is one of the most useful data structures (https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). Stack is one of the most useful data structures (https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). In this task you need to implement a classic stack based on one of the base Python containers. 
+Stack is one of the most useful data structures (https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). In this task you need to implement a classic stack based on one of the base Python containers. 
 
 To deploy project on your local machine create new virtual environment and execute this command:
 
