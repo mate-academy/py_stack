@@ -1,15 +1,26 @@
+"""
+docstring
+"""
 import pytest
 
 import stack
 
 
 def test_push():
+    """
+
+    :return:
+    """
     s = stack.Stack()
     s.push(42)
     assert s.pop() == 42
 
 
 def test_double_push():
+    """
+
+    :return:
+    """
     s = stack.Stack()
     s.push(1)
     s.push(2)
@@ -18,6 +29,10 @@ def test_double_push():
 
 
 def test_five_push():
+    """
+
+    :return:
+    """
     s = stack.Stack()
     for i in range(5):
         s.push(i)
@@ -27,6 +42,10 @@ def test_five_push():
 
 
 def test_empty():
+    """
+
+    :return:
+    """
     s = stack.Stack()
     with pytest.raises(IndexError):
         s.pop()
