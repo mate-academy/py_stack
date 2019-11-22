@@ -1,9 +1,17 @@
+"""module"""
+
+
 class Stack:
+    """stack"""
     def __init__(self):
-        ...
+        self.stack = []
 
     def push(self, value):
-        pass
+        """add value to the end"""
+        self.stack.append(value)
 
     def pop(self):
-        return 0
+        """pop last value"""
+        if not self.stack:
+            raise IndexError
+        return self.stack.pop()
