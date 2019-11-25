@@ -1,9 +1,16 @@
+"""module docstring"""
 class Stack:
+    """class docstring"""
     def __init__(self):
-        ...
+        """docstring"""
+        self.array = []
 
     def push(self, value):
-        pass
+        """docstring"""
+        self.array.append(value)
 
     def pop(self):
-        return 0
+        """docstring"""
+        if not self.array:
+            raise IndexError
+        return self.array.pop()
