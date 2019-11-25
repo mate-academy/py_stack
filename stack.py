@@ -1,9 +1,17 @@
+"""Implement a classic stack"""
+
+
 class Stack:
+    """Implementation of a classic stack based on one of the base Python containers"""
     def __init__(self):
-        ...
+        self.array = []
 
     def push(self, value):
-        pass
+        """Python push realization"""
+        self.array.append(value)
 
     def pop(self):
-        return 0
+        """Python pop realization"""
+        if self.array:
+            return self.array.pop()
+        raise IndexError
