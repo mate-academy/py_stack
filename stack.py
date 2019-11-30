@@ -1,9 +1,12 @@
+""" """
+
 class Stack:
+    """stack object"""
     def __init__(self):
-        ...
+        self.items = []
 
     def push(self, value):
-        pass
+        self.items.append(value)
 
     def pop(self):
-        return 0
+        return self.items.pop()
