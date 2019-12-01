@@ -1,9 +1,14 @@
+""" docstring"""
+
 class Stack:
+    """stack object"""
     def __init__(self):
-        ...
+        self.items = []
 
     def push(self, value):
-        pass
+        """add new element in stack"""
+        self.items.append(value)
 
     def pop(self):
-        return 0
+        """return last item"""
+        return self.items.pop()
